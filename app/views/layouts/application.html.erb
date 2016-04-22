@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProfessionalqaCom</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="main-header">
+  <div class="pro-container">
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pro-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to image_tag('pro-icon.png', :alt => "ProfessionalQA.com", :class => "pro-icon"), home_index_path %>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="pro-navbar-collapse">
+      <div class="navbar-form navbar-left" role="search">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="pro-search-head">Search more about Professional QA:</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="pro-search-box input-group">
+              <%= text_field_tag 'search', nil, placeholder: "Search for...", class: 'form-control' %>
+              <span class="input-group-btn input-group-btn-search">
+                <%= image_submit_tag("search-icon.png") %>
+              </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div>
+      <div class="social-icons navbar-nav navbar-right">
+        <%= link_to image_tag("fb.png", :alt => "Facebook", :title => "Facebook"), "https://www.facebook.com/ThinkSysInc", target: "_blang" %>
+        <%= link_to image_tag("tt.png", :alt => "Twitter", :title => "Twitter"), "https://twitter.com/ThinkSysInc", target: "_blang" %>
+        <%= link_to image_tag("lin.png", :alt => "LinkedIn", :title => "LinkedIn"), "https://www.linkedin.com/company/thinksys-inc", target: "_blang" %>
+        <%= link_to image_tag("gp.png", :alt => "Google Plus", :title => "Google Plus"), "https://plus.google.com/+ThinksysInc_Official/posts", target: "_blang" %>
+        <%= link_to image_tag("pin.png", :alt => "Pintrest", :title => "Pintrest"), "https://in.pinterest.com/Thinksys_Inc/", target: "_blang" %>
+        <%= link_to image_tag("su.png", :alt => "Stumble Upon", :title => "Stumble Upon"), "http://www.stumbleupon.com/stumbler/ThinksysInc", target: "_blang" %>
+      </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+</div>
+<div class="pro-container">
+  <div class="professional-logo-box">
+    <%= image_tag('professionalqa.com-logo.png', :alt => "ProfessionalQA.com", :title => "ProfessionalQA.com")%>
+  </div>
+</div>
+<div class="second-pro-nov">
+  <div class="pro-container">
+    <ul class="nav nav-tabs pull-right">
+      <li role="presentation"><a href="#">Professional QA.com</a></li>
+      <li role="presentation"><a href="#">Contact</a></li>
+      <li role="presentation"><a href="#">Jobs</a></li>
+      <li role="presentation"><a href="#">About us</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="pro-container">
+<%= yield %>
+</div>
+
+<div class="footer">
+  <div class="pro-container">
+    <div class="footer-carousel">
+      <div class="footer-head">ALL BLOGS RELATED FOR TESTING</div>
+      <!-- Controls -->
+        <div class="ftr-carousel-btn">
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      <div id="carousel-example-generic" class="carousel slide" data-interval="false" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <ul class="ftr-post-links">
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <ul class="ftr-post-links">
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Professional QA.com</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-second">
+    <div class="pro-container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-lg-4 col-lg-4">sdfdsf</div>
+        <div class="col-xs-12 col-sm-4 col-lg-4 col-lg-4">sdfdsf</div>
+        <div class="col-xs-12 col-sm-4 col-lg-4 col-lg-4">sdfdsf</div>
+      </div>
+    </div>
+  </div>
+  <div class="pro-container">
+    <div class="copyright">
+      © 2016 ProfessionalQA.com — All rights reserved.
+    </div>
+  </div>
+</div>
+</body>
+</html>
